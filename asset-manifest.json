@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Profile_Manager-Frontend/static/css/main.905f8676.css",
-    "main.js": "/Profile_Manager-Frontend/static/js/main.ac03db2f.js",
+    "main.js": "/Profile_Manager-Frontend/static/js/main.70edf2b4.js",
     "static/js/453.c525d7c0.chunk.js": "/Profile_Manager-Frontend/static/js/453.c525d7c0.chunk.js",
     "static/media/Naruto All Characters Friends 2.jpg": "/Profile_Manager-Frontend/static/media/Naruto All Characters Friends 2.3729763b2a9bfe15a5e3.jpg",
     "static/media/Obito 5.jpg": "/Profile_Manager-Frontend/static/media/Obito 5.c0da3be301bce0dc3c5f.jpg",
@@ -9,11 +9,11 @@
     "static/media/Itachi 3.jpg": "/Profile_Manager-Frontend/static/media/Itachi 3.8280f2d799b127a5b46f.jpg",
     "index.html": "/Profile_Manager-Frontend/index.html",
     "main.905f8676.css.map": "/Profile_Manager-Frontend/static/css/main.905f8676.css.map",
-    "main.ac03db2f.js.map": "/Profile_Manager-Frontend/static/js/main.ac03db2f.js.map",
+    "main.70edf2b4.js.map": "/Profile_Manager-Frontend/static/js/main.70edf2b4.js.map",
     "453.c525d7c0.chunk.js.map": "/Profile_Manager-Frontend/static/js/453.c525d7c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.905f8676.css",
-    "static/js/main.ac03db2f.js"
+    "static/js/main.70edf2b4.js"
   ]
 }
