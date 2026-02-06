@@ -50,10 +50,8 @@ const MyClass = () => {
       setIsLoading(true)
       const response = await API.get("/class", {
         params: {
-          role: "student",
           ...(search && { search }),
-          page: paginate,
-          limit: 5
+          page: paginate
         }
       });
       setData(response.data.students)

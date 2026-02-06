@@ -14,6 +14,7 @@ import MyProfile from './Pages/MyProfile'
 import MyClass from './Pages/MyClass'
 import Student from './Pages/Student'
 import Edit from './Pages/Edit'
+import MyTeacher from './Pages/MyTeacher'
 
 
 
@@ -39,6 +40,7 @@ const App = () => {
             <Route path='/students' element={<MyStudents />} />
             <Route path='/profile' element={<MyProfile />} />
             <Route path='/my-students' element={<MyClass />} />
+            <Route path='/my-teachers' element={<MyTeacher />} />
             <Route path='/student/:id' element={<Student />} />
             <Route path='/edit' element={<Edit />} />
 
