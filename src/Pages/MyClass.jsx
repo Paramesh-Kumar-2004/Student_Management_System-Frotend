@@ -111,8 +111,8 @@ const MyClass = () => {
             <thead className="bg-[#0f4c7546] border-2 border-[#3282B8] rounded-2xl w-full p-6 text-start transition-transform text-emerald-300 text-lg">
               <tr>
                 <th className="p-4">Name</th>
-                <th className="p-4">Email</th>
                 <th className="p-4">Department</th>
+                <th className="p-4">Email</th>
                 <th className="p-4">Details</th>
                 <th className="p-4">Remove Student</th>
               </tr>
