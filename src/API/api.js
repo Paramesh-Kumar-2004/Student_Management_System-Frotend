@@ -3,7 +3,7 @@ import axios from "axios";
 
 const baseURL = import.meta.env.DEV
     ? "http://localhost:2004/api/v1"
-    : "https://profile-manager-backend-blond.vercel.app/api/v1";
+    : "https://student-management-system-backend-xi.vercel.app/api/v1";
 
 
 export const API = axios.create({

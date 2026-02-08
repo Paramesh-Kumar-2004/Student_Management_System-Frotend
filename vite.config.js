@@ -8,6 +8,6 @@ export default defineConfig(({ command }) => ({
     react(),
     tailwindcss()
   ],
-  base: '/Profile_Manager-Frontend/',
+  base: '/Student_Management_System-Frotend/',
 }))
 
