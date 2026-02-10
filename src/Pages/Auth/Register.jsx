@@ -12,13 +12,16 @@ const Register = () => {
     const [viewPassword, setViewPassword] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [userData, setUserData] = useState({
-        userName: "",
+        fullName: "",
         email: "",
-        password: ""
+        password: "",
+        department: "OTHERS",
+        phoneNumber: ""
     })
 
     const HandleOnChange = async (e) => {
         const { name, value } = e.target;
+        // console.log(name, value)
         setUserData({
             ...userData,
             [name]: value
@@ -57,7 +60,7 @@ const Register = () => {
                 className="absolute inset-0 w-full h-full object-cover"
             />
 
-            <div className="relative z-10 w-full max-w-md bg-black/30 border-2 border-[rgb(181,174,166)] shadow-[0_0_10px_rgba(0,0,0,0.8)] rounded-lg p-6 text-center">
+            <div className="relative z-10 w-full max-w-md max-h-[90vh] overflow-y-auto bg-black/30 border-2 border-[rgb(181,174,166)] shadow-[0_0_10px_rgba(0,0,0,0.8)] rounded-lg p-6 text-center [scrollbar-width:none]">
 
                 <form onSubmit={HandleSubmit}>
 
@@ -72,8 +75,8 @@ const Register = () => {
                         <input
                             type="text"
                             placeholder="Enter Your Name"
-                            name='userName'
-                            value={userData.userName}
+                            name='fullName'
+                            value={userData.fullName}
                             onChange={(e) => HandleOnChange(e)}
                             required
                             className="w-full p-3 mb-4 bg-black/40 border-4 border-sky-400 rounded-lg text-[rgba(0,207,255,0.8)] font-bold text-base outline-none"
@@ -91,6 +94,21 @@ const Register = () => {
                             value={userData.email}
                             required
                             onChange={(e) => HandleOnChange(e)}
+                            className="w-full p-3 mb-4 bg-black/40 border-4 border-sky-400 rounded-lg text-[rgba(0,207,255,0.8)] font-bold text-base outline-none"
+                        />
+                    </div>
+
+                    <div>
+                        <label className="block text-left text-[#00CFFF] font-bold text-lg mb-1">
+                            Phone Number :
+                        </label>
+                        <input
+                            type="text"
+                            placeholder="Enter Your Phone Number"
+                            name='phoneNumber'
+                            value={userData.phoneNumber}
+                            onChange={(e) => HandleOnChange(e)}
+                            required
                             className="w-full p-3 mb-4 bg-black/40 border-4 border-sky-400 rounded-lg text-[rgba(0,207,255,0.8)] font-bold text-base outline-none"
                         />
                     </div>
@@ -115,7 +133,36 @@ const Register = () => {
                                 {viewPassword ? "Hide Password" : "Show Password"}
                             </span>
                         </div>
+                    </div>
 
+                    <div>
+                        <label className="block text-left text-[#00CFFF] font-bold text-lg mb-1">
+                            Department :
+                        </label>
+
+                        <select name="department"
+                            value={userData.department}
+                            onChange={(e) => HandleOnChange(e)}
+                            className="w-full p-3 mb-4 bg-black/40 border-4 border-sky-400 rounded-lg text-[rgba(0,207,255,0.8)] font-bold text-base outline-none cursor-pointer"
+                        >
+                            <option value="CSE" className='bg-black text-white'>CSE</option>
+                            <option value="IT" className='bg-black text-white'>IT</option>
+                            <option value="MECH" className='bg-black text-white'>MECH</option>
+                            <option value="EEE" className='bg-black text-white'>EEE</option>
+                            <option value="ECE" className='bg-black text-white'>ECE</option>
+                            <option value="CIVIL" className='bg-black text-white'>CIVIL</option>
+                            <option value="PHYSICS" className='bg-black text-white'>PHYSICS</option>
+                            <option value="OTHERS" className='bg-black text-white'>OTHERS</option>
+                        </select>
+
+                        {/* <input
+                            type="email"
+                            name='email'
+                            value={userData.department}
+                            required
+                            onChange={(e) => HandleOnChange(e)}
+                            className="w-full p-3 mb-4 bg-black/40 border-4 border-sky-400 rounded-lg text-[rgba(0,207,255,0.8)] font-bold text-base outline-none"
+                        /> */}
                     </div>
 
                     <div className="flex justify-center items-center mt-1">
