@@ -8,6 +8,6 @@ export default defineConfig(({ command }) => ({
     react(),
     tailwindcss()
   ],
-  base: '/Student_Management_System-Frotend/',
+  // base: '/Student_Management_System-Frotend/',
 }))
 
