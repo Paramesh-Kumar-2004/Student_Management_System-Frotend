@@ -27,14 +27,13 @@ const ParticlesBackground = () => {
                     particles: {
                         number: { value: 350, density: { enable: true, area: 800 } },
                         color: { value: "#ffffff" },
-                        // color: { value: "#ffffff" },
                         shape: { type: "circle" },
                         opacity: { value: 0.6 },
                         size: { value: { min: 1, max: 3 } },
                         links: {
                             enable: true,
                             distance: 150,
-                            color: "#2b87f0",
+                            color: "#ff00aa",
                             opacity: 0.4,
                             width: 1,
                         },
